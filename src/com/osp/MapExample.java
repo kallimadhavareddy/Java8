@@ -1,0 +1,133 @@
+package com.osp;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapExample {
+
+    public static void main(String args[]){
+        Map<String,String> errorMap= new HashMap<>();
+        getErrorMap(errorMap);
+        System.out.println(errorMap.get("Testing"));
+    }
+
+    public static void getErrorMap(Map<String,String> errorMap){
+        {
+            errorMap.put("Invalid account. name is empty","invalid_account");
+            errorMap.put("Invalid account name","invalid_account");
+            errorMap.put("Invalid account. name not provided","invalid_account");
+            errorMap.put("Invalid account. account number is empty","invalid_account");
+            errorMap.put("Invalid account number","invalid_account");
+            errorMap.put("Invalid account. account number not provided","invalid_account");
+            errorMap.put("Invalid language","invalid_language_id");
+            errorMap.put("Invalid language. language is empty","invalid_language_id");
+            errorMap.put("Invalid language. language not provided","invalid_language_id");
+            errorMap.put("Invalid contact. name new bank is empty","invalid_contact_name");
+            errorMap.put("Invalid contact. name new bank not provided","invalid_contact_name");
+            errorMap.put("Invalid Contact. Name new bank contains invalid chars","invalid_contact_name");
+            errorMap.put("Invalid contact. tel new bank is empty","invalid_contact_tel");
+            errorMap.put("Invalid contact. tel new bank not provided","invalid_contact_tel");
+            errorMap.put("Invalid contact. tel new bank not valid","invalid_contact_tel");
+            errorMap.put("Invalid contact. email new bank is empty","invalid_contact_email");
+            errorMap.put("Invalid contact. Email new bank  not provided","invalid_contact_email");
+            errorMap.put("Invalid contact email new bank","invalid_contact_email");
+            errorMap.put("Pagination details must be present","invalid_search");
+            errorMap.put("Sorting direction must be present","invalid_search");
+            errorMap.put("Sorting path must be present","invalid_search");
+            errorMap.put("Search path details must be present","invalid_search");
+            errorMap.put("Search Value details must be present","invalid_search");
+            errorMap.put("The pageIndex value must be greater than 0","invalid_search");
+            errorMap.put("The pageIndex value must be positive","invalid_search");
+            errorMap.put("Invalid dash board search Pagination details must be present","invalid_search");
+            errorMap.put("Sorting details must be present","invalid_search");
+            errorMap.put("Filter details must be present","invalid_search");
+            errorMap.put("Sorting path details must be present","invalid_search");
+            errorMap.put("Sorting direction details must be present","invalid_search");
+            errorMap.put("Invalid case id","invalid_case_id");
+            errorMap.put("Invalid status","invalid_status");
+            errorMap.put("Invalid status. it exceeds max value","invalid_status");
+            errorMap.put("BIC is empty","invalid_bic");
+            errorMap.put("Invalid BIC","invalid_bic");
+            errorMap.put("Invalid start date","invalid_start_date");
+            errorMap.put("Invalid request date","invalid_request_date");
+            errorMap.put("Invalid contact account","invalid_contact");
+            errorMap.put("RequestInfo must be present","invalid_request");
+            errorMap.put("personId must be present","invalid_person_id");
+            errorMap.put("Invalid uploaded customer filename is empty","invalid_file");
+            errorMap.put("Invalid uploaded customer file content is empty","invalid_file");
+            errorMap.put("Invalid uploaded customer file type is empty","invalid_file");
+            errorMap.put("Invalid former account info","invalid_account");
+            errorMap.put("Invalid new account info","invalid_account");
+            errorMap.put("Invalid switch date","invalid_switch_date");
+            errorMap.put("Invalid request info. request type is empty","invalid_request_type");
+            errorMap.put("Invalid request info. request type is not provided","invalid_request_type");
+            errorMap.put("Invalid value for notify sdd creditors","invalid_notify_sdd_creditors");
+            errorMap.put("Invalid value for notify recurrent payers","invalid_notify_recurrent_payers");
+            errorMap.put("Invalid value for notify by email","invalid_notify_by_email");
+            errorMap.put("Invalid customer upload form. please upload again","invalid_file");
+            errorMap.put("The caseId value must be positive to submit case","invalid_case_id");
+            errorMap.put("The caseId value must be positive to retrieve case","invalid_case_id");
+            errorMap.put("Filter path should be modified","invalid_search");
+            errorMap.put("Page value should present","invalid_search");
+            errorMap.put("Page size should present","invalid_search");
+            errorMap.put("Page Direction should present","invalid_search");
+            errorMap.put("Sort path should present","invalid_search");
+            errorMap.put("The caseId value must be positive to download zip","invalid_case_id");
+            errorMap.put("invalid portfolio report start date","invalid_report_start_date");
+            errorMap.put("invalid status tracking report start date","invalid_report_start_date");
+            errorMap.put("invalid portfolio report end date","invalid_report_end_date");
+            errorMap.put("invalid status tracking end date","invalid_report_end_date");
+            errorMap.put("Invalid request type","invalid_request_type");
+            errorMap.put("corporate key is invalid","invalid_person_id");
+            errorMap.put("Invalid incoming iban number. exceeded max length","invalid_incoming_sct_data");
+            errorMap.put("Invalid incoming iban number","invalid_incoming_sct_data");
+            errorMap.put("Invalid incoming beneficiary full name. exceeded max length","invalid_incoming_sct_data");
+            errorMap.put("Invalid incoming sct full name creditor","invalid_incoming_sct_data");
+            errorMap.put("Invalid incoming beneficiary street nr bus. exceeded max length","invalid_incoming_sct_data");
+            errorMap.put("Invalid incoming beneficiary post code city. exceeded max length","invalid_incoming_sct_data");
+            errorMap.put("Invalid incoming beneficiary country code. exceeded max length","invalid_incoming_sct_data");
+            errorMap.put("Invalid memo account number. exceeded max length","invalid_memo_data");
+            errorMap.put("Invalid memo account number","invalid_memo_data");
+            errorMap.put("Invalid memo bic. exceeded max length","invalid_memo_data");
+            errorMap.put("invalid memo bic","invalid_memo_data");
+            errorMap.put("Invalid memo amount. exceeded max limit","invalid_memo_data");
+            errorMap.put("Invalid memo amount. minimum limit is 0.0","invalid_memo_data");
+            errorMap.put("Invalid memo beneficiary name. exceeded max length","invalid_memo_data");
+            errorMap.put("Invalid memo beneficiary name","invalid_memo_data");
+            errorMap.put("Invalid memo omg communication. exceeded max length","invalid_memo_data");
+            errorMap.put("Invalid memo free text. exceeded max length","invalid_memo_data");
+            errorMap.put("Invalid memo sepa reference. exceeded max length","invalid_memo_data");
+            errorMap.put("Invalid memo end to end reference. exceeded max length","invalid_memo_data");
+            errorMap.put("Invalid memo purpose. exceeded max length","invalid_memo_data");
+            errorMap.put("Invalid sdd name creditor","invalid_sdd_data");
+            errorMap.put("Invalid sdd iban number","invalid_sdd_data");
+            errorMap.put("Invalid sdd max amount. exceeded max limit","invalid_sdd_data");
+            errorMap.put("Invalid sdd max amount. minimum limit is 0.0","invalid_sdd_data");
+            errorMap.put("Sdd Blocking is either true or false","invalid_sdd_blocking_data");
+            errorMap.put("Invalid sdd blocking name creditor","invalid_sdd_blocking_data");
+            errorMap.put("Invalid standing order beneficiary account number. exceeded max length","invalid_standing_order_data");
+            errorMap.put("Invalid standing order beneficiary account number","invalid_standing_order_data");
+            errorMap.put("Invalid standing bic. exceeded max length","invalid_standing_order_data");
+            errorMap.put("Invalid standing amount. exceeded max limit","invalid_standing_order_data");
+            errorMap.put("Invalid standing amount. minimum limit is 0.0","invalid_standing_order_data");
+            errorMap.put("Invalid standing next execution date","invalid_standing_order_data");
+            errorMap.put("Invalid standing beneficiary name. exceeded max length","invalid_standing_order_data");
+            errorMap.put("Invalid standing order end date","invalid_standing_order_data");
+            errorMap.put("Invalid standing periodicity. exceeded max length","invalid_standing_order_data");
+            errorMap.put("Invalid standing specification. exceeded max length","invalid_standing_order_data");
+            errorMap.put("Invalid standing ogm communication. exceeded max length","invalid_standing_order_data");
+            errorMap.put("Invalid standing freeText. exceeded max length","invalid_standing_order_data");
+            errorMap.put("Invalid standing SEPA reference. exceeded max length","invalid_standing_order_data");
+            errorMap.put("Invalid standing end to end sepa payment order reference. exceeded max length","invalid_standing_order_data");
+            errorMap.put("Invalid standing purpose. exceeded max length","invalid_standing_order_data");
+            errorMap.put("Invalid standing extra spec. exceeded max length","invalid_standing_order_data");
+            errorMap.put("Invalid standing extra interceptions. exceeded max length","invalid_standing_order_data");
+            errorMap.put("Invalid customer upload form. Tampered File","invalid_file");
+            errorMap.put("Invalid File","invalid_file");
+            errorMap.put("Invalid customer upload form. Exceeds Max Limit","invalid_file");
+            errorMap.put("Invalid file. File Tampered","invalid_file");
+            errorMap.put("Invalid file name. not matched with uploaded bytes","invalid_file");
+            errorMap.put(null,"Testing Value.......");
+        }
+    }
+}
